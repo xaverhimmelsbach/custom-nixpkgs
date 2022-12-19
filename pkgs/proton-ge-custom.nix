@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
     owner = "GloriousEggroll";
     repo = pname;
     rev = version;
-    sha256 = "sha256-XYre/EwQZCpjNFlb5sG+BhbK5aA7K3xBptuiII8YQ50=";
+    sha256 = "sha256-RZGJxxDW2GGRdfHN/HIocK4EPVQwyJlKIc++OPsZoPI=";
   };
 
   buildCommand = ''
