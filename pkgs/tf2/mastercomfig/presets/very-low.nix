@@ -10,6 +10,6 @@ stdenv.mkDerivation rec {
 
   buildCommand = ''
     mkdir -p $out
-    cp $src $out
+    cp $src $out/out.vpk
   '';
 }
