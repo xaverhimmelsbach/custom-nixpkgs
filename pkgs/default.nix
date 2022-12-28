@@ -29,5 +29,15 @@ with super; rec {
       ultimate-visual-fix-pack = callPackage ./tf2/ultimate-visual-fix-pack/ultimate-visual-fix-pack.nix { };
       ultimate-visual-fix-pack-no-model-fixes = callPackage ./tf2/ultimate-visual-fix-pack/ultimate-visual-fix-pack-no-model-fixes.nix { };
     };
+    bgum = {
+      no-hats = callPackage ./tf2/bgum/no-hats.nix { };
+      no-bugged-misc = callPackage ./tf2/bgum/no-bugged-misc.nix { };
+      no-hats-creatorstf = callPackage ./tf2/bgum/no-hats-creatorstf.nix { };
+      no-unusuals = callPackage ./tf2/bgum/no-unusuals.nix { };
+      no-christmas-lights = callPackage ./tf2/bgum/no-christmas-lights.nix { };
+      no-skins = callPackage ./tf2/bgum/no-skins.nix { };
+      no-botkiller = callPackage ./tf2/bgum/no-botkiller.nix { };
+      no-zombie-skins = callPackage ./tf2/bgum/no-zombie-skins.nix { };
+    };
   };
 }
