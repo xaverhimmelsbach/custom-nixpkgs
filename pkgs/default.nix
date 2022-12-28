@@ -25,5 +25,9 @@ with super; rec {
         transparent-viewmodels = callPackage ./tf2/mastercomfig/addons/transparent-viewmodels.nix { };
       };
     };
+    ultimate-visual-fix-pack = {
+      ultimate-visual-fix-pack = callPackage ./tf2/ultimate-visual-fix-pack/ultimate-visual-fix-pack.nix { };
+      ultimate-visual-fix-pack-no-model-fixes = callPackage ./tf2/ultimate-visual-fix-pack/ultimate-visual-fix-pack-no-model-fixes.nix { };
+    };
   };
 }
