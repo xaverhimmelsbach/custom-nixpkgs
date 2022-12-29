@@ -3,13 +3,15 @@ stdenv.mkDerivation rec {
   pname = "high";
   version = "9.10.1";
 
+  filename = "mastercomfig-high-preset.vpk";
   src = pkgs.fetchurl {
-    url = "https://github.com/mastercomfig/mastercomfig/releases/download/${version}/mastercomfig-high-preset.vpk";
+    url = "https://github.com/mastercomfig/mastercomfig/releases/download/${version}/${filename}";
     sha256 = "sha256-oEfi+JGsMqH4t4ozWBvKGx0hqw2ME9BbI14xlrYYDTY=";
   };
 
   buildCommand = ''
     mkdir -p $out
     cp $src $out/out.vpk
+    echo "$filename" > $out/filename
   '';
 }
