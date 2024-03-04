@@ -1,4 +1,5 @@
 self: super:
-with super; rec {
+with super; {
   proton-ge-custom = callPackage ./proton-ge-custom.nix { };
+  spotify-backup = callPackage ./spotify-backup.nix { };
 }
