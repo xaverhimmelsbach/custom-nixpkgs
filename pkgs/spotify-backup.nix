@@ -29,4 +29,6 @@ EOF'';
   postInstall = ''
     mv -v $out/bin/spotify-backup.py $out/bin/spotify-backup
   '';
+
+  meta.mainProgram = "spotify-backup";
 }
